@@ -1,0 +1,38 @@
+# 機密情報
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.*
+
+# 依存関係・自動生成物
+node_modules/
+vendor/
+.venv/
+__pycache__/
+dist/
+build/
+
+# OS・エディタ固有ファイル
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ログ・キャッシュ
+*.log
+logs/
+coverage/
+.nyc_output/
+
+# Terraformの状態ファイル(シークレットが含まれることがあるため注意)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# ローカルDB・一時ファイル
+*.sqlite3
+*.db
+tmp/
